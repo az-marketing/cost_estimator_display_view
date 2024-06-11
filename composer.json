@@ -1,0 +1,8 @@
+{
+    "name": "az-marketing/cost_estimator_display_view",
+    "description": "Provides a cost estimator view block",
+    "type": "drupal-module",
+    "require": {
+        "php": ">=7.2"
+    }
+} 
