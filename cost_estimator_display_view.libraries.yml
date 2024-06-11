@@ -1,0 +1,10 @@
+cost_estimator_display_view:
+  css:
+    component:
+      css/cost_estimator_display_view.css: {}
+  js:
+    js/cost_estimator_display_view.js: {}
+    js/cost_estimator_page_view.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

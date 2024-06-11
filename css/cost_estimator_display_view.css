@@ -1,0 +1,78 @@
+.views-element-container header 
+{background-color: #FFF; 
+    padding:1.5rem 1.75rem 0;
+    margin:2rem 2rem 0 2.25%;
+    width: 27%;
+} 
+
+.views-element-container header h2
+{
+    margin:0;
+}
+
+#views-exposed-form-cost-estimator-block-block-1, #views-exposed-form-cost-estimator-block-page-1
+{background-color: #FFF; 
+    padding: 2.5rem 1.75rem;
+    margin:0 0 2rem 2.25%;
+    float:left;
+    width: 27%}
+label[for^="edit-field-career-level-target-id"], label[for^="edit-nid-entityreference-filter"] 
+{color:#49595e;
+    display:block;
+    margin-top:.5rem;
+    text-transform:uppercase;}
+[id^="edit-field-career-level-target-id"], [id^="edit-nid-entityreference-filter"] 
+{-moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background-color: #FFF;
+    color: #00194a;
+    height: 36px;
+    outline: 0;
+    width: 100%;}
+    
+#views-exposed-form-cost-estimator-block-block-1  .form-actions input, #views-exposed-form-cost-estimator-block-page-1  .form-actions input
+{margin: 2rem auto;
+min-width:60%;
+display:block;
+background:rgb(30, 82, 136);
+border-radius:2px;
+}
+
+
+.cost-estimator-empty, .views-field-cost-calculator-views-field 
+{background:#FFF;
+    padding: 1rem 2rem 2rem;
+    margin: -3.25rem 2.25% 2rem 2.25%;
+    float: left;
+    width: 65%;
+}
+
+.cost-estimator-empty .img-spacer {
+height:192px;
+min-height:192px;
+background:url("./icon_Tuition_pig.svg");
+background-repeat:no-repeat;
+background-position:center;
+margin-bottom:.5rem;
+}
+
+
+.views-field-cost-calculator-views-field table 
+{
+    width:100%;
+}
+
+@media screen and (max-width:871px) {
+    .views-element-container header 
+    {
+        width:94%;
+    }
+
+
+#views-exposed-form-cost-estimator-block-block-1,  .cost-estimator-empty, .views-field-cost-calculator-views-field, #views-exposed-form-cost-estimator-block-page-1
+{
+    width: 94%;
+    margin: 0 2.25% 1.5rem; 
+}
+}

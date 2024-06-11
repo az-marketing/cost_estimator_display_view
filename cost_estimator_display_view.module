@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains cost_estimator_display_view.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable; 
+/**
+* Implements hook_views_pre_render().
+*/
+function cost_estimator_display_view_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'cost_estimator_block')) {
+    $view->element['#attached']['library'][] = 'cost_estimator_display_view/cost_estimator_display_view';
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function cost_estimator_display_view_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cost_estimator_display_view module.
+    case 'help.page.cost_estimator_display_view':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a cost estimator view block and a cost estimator view page') . '</p>';
+      return $output;
+
+    default:
+  }
+}
