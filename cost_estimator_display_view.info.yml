@@ -2,7 +2,7 @@ name: 'Cost Estimator Display View'
 type: module
 description: 'Provides a cost estimator view block'
 core_version_requirement: ^9 || ^10
-package: Custom
+package: 'Custom'
 dependencies:
   - cc_views_field:cc_views_field
   - entityreference_filter:entityreference_filter
